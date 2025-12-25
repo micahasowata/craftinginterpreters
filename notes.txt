@@ -1,0 +1,7 @@
+a scanner takes in source code text as input, ignoring the comments and invalid whitespace, then outputs tokens
+a parser takes in the tokens and combine them in a grammar tree called an abstract syntax tree (AST)
+the parser reports syntax errors
+the parser is then statically analysed. variable names are resolved. scope rules are enforced. types are checked.
+type errors are reported here.
+
+that is the frontend of the compiler
