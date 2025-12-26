@@ -37,3 +37,6 @@ Interpreters compile too.
 
 A pure compiler does the transformation and stops there
 a pure interpreter goes futher to run it
+
+when an operator takes two operands it is a binary operator
+when the operator is between the operand it is an infix operator
