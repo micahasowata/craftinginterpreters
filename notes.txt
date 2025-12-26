@@ -5,3 +5,35 @@ the parser is then statically analysed. variable names are resolved. scope rules
 type errors are reported here.
 
 that is the frontend of the compiler
+
+the resulting three is converted into an intermediate representation. this conversion allows for reusability of the frontend across platforms
+the IR can be optimized as much or as little as the language creator wants
+
+that is the middle
+
+
+I really would like to write my own IR
+
+they can then be used to generate code that a machine can understand
+
+at times, they produce actual chip-dependent machine code. an implementation for each chip
+
+or you could make a virtual machine, compile the IR into the bytecode of the virtual machine and run the bytecode in the machine.
+
+the machine can be installed in anywhere that the language used to create the machine is available
+
+All in one compilers do everything in the parser. Reading and processing from top to bottom so the source code must have enough for each step of the way
+
+Tree walk interpreters convert to AST then walk the tree. They are slow
+
+Transpilers do the whole thing rigorously but produces another proper language as IR and run the compilation system for that
+
+Just In Time compilers would generate the machine code then and there. It gets all the information necessary to generate code and runs them
+
+Compilers and Interpreters are not different.
+
+Compilers compile. Compilation is changing a language from one form to another
+Interpreters compile too.
+
+A pure compiler does the transformation and stops there
+a pure interpreter goes futher to run it
